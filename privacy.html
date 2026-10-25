@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OpenAir privacy policy</title>
+<meta name="description" content="How OpenAir handles your health data: it stays on your phone.">
+<style>
+  :root { --bg: #fbfbfd; --fg: #1b1c1f; --muted: #50535b; --accent: #2a5d8a; --card: #eef0f4; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #111317; --fg: #e4e5e9; --muted: #a8acb5; --accent: #9ccaf5; --card: #1c1f25; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 2rem; margin: 0 0 4px; }
+  h2 { font-size: 1.25rem; margin: 36px 0 8px; }
+  p.meta { color: var(--muted); margin: 0 0 24px; }
+  ul { padding-left: 1.2em; }
+  li { margin: 4px 0; }
+  .card { background: var(--card); border-radius: 16px; padding: 16px 24px; margin: 16px 0; }
+  code { font-size: 0.9em; overflow-wrap: anywhere; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy policy</h1>
+  <p class="meta">OpenAir · Last updated 25 October 2026</p>
+
+  <div class="card">
+    <strong>In short:</strong> OpenAir keeps your health data on your phone. There is no OpenAir server, account, advertising or analytics. Nothing is sold, shared or used for anything other than showing you your own data.
+  </div>
+
+  <h2>What OpenAir is</h2>
+  <p>OpenAir is an Android app that turns the data from your fitness band into scores and charts for you. It is a personal project and not a medical device.</p>
+
+  <h2>Data OpenAir reads</h2>
+  <ul>
+    <li><strong>Android Health Connect</strong>, with the permissions you grant on the phone: activity, sleep, heart rate, HRV, resting heart rate, respiratory rate, skin temperature, body measurements, nutrition and the other types listed on the permission screen. OpenAir never writes to Health Connect.</li>
+    <li><strong>Google Health (optional, off unless you turn it on).</strong> If you connect it in Settings, OpenAir reads, read-only, four things Google Health doesn’t share with Health Connect: daily blood oxygen (SpO2), VO2 max, Active Zone Minutes and irregular rhythm notifications. It uses these Google scopes and no others:
+      <ul>
+        <li><code>googlehealth.health_metrics_and_measurements.readonly</code></li>
+        <li><code>googlehealth.activity_and_fitness.readonly</code></li>
+        <li><code>googlehealth.irn.readonly</code></li>
+      </ul>
+      OpenAir does not ask for your name, email address or profile, and stores nothing about your Google account.</li>
+    <li><strong>What you enter</strong>: your profile (birth date, sex, height, an optional name and photo), journal check-ins, logs, and workouts recorded on the phone, including their GPS routes.</li>
+  </ul>
+
+  <h2>Where it is stored</h2>
+  <p>Everything is stored only on your phone, in the app’s private storage. The Google access token is kept in Android’s encrypted secure storage. Backups are files you create and keep yourself.</p>
+
+  <h2>What leaves the phone</h2>
+  <ul>
+    <li><strong>Requests to Google</strong>, only while the Google Health connection is on: the phone asks Google’s servers (<code>health.googleapis.com</code>) for your own readings, which Google already holds. They come straight to the phone; no other server is involved.</li>
+    <li><strong>Map tiles</strong> for the workout recorder’s map, from OpenFreeMap: only the map area being viewed, never your route or health data.</li>
+    <li><strong>The coach</strong>, only if you set it up with your own AI provider’s key: your questions and the numbers it looks up are sent to the provider you chose, and OpenAir shows you what will be sent first.</li>
+  </ul>
+  <p>Nothing else is sent anywhere. OpenAir has no analytics, crash reporting or advertising.</p>
+
+  <h2>How Google data is used</h2>
+  <p>Data received from Google is used only to show you your own readings and scores inside OpenAir. It is never transferred to anyone, never used for advertising, and never read by a person. OpenAir’s use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements, and to the <a href="https://developers.google.com/health/policies/health-api-developer-user-data-policy">Google Health API Developer and User Data Policy</a>.</p>
+
+  <h2>Your control</h2>
+  <ul>
+    <li>Turn off the Google Health connection in OpenAir’s Settings: OpenAir revokes its access at Google and deletes the readings it brought.</li>
+    <li>Or remove OpenAir’s access from Google’s side at <a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a>.</li>
+    <li>Change Health Connect permissions at any time in Android’s Health Connect settings.</li>
+    <li>Delete everything from Settings, or by uninstalling the app.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>OpenAir is not intended for children under 13.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the date above changes with it.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:simarbeloved@gmail.com">simarbeloved@gmail.com</a></p>
+
+  <p><a href="index.html">OpenAir home</a></p>
+</main>
+</body>
+</html>
